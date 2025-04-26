@@ -193,7 +193,6 @@ const ProductScreen = () => {
                   Please <Link to="/login">sign in</Link> to write a review{' '}
                 </Message>
               )}
-
             </ListGroup.Item>
           </ListGroup>
         </Col>

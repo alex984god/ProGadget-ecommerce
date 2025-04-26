@@ -61,7 +61,7 @@ const PlaceOrderScreen = () => {
             <strong>Method:</strong>
             {cart.paymentMethod}
         </ListGroup.Item>
-        <ListGroup.Item>
+        <ListGroup.Item>Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factors'.
             <h2>Order Items</h2>
             {cart.cartItems.length ===0  ? (
                 <Message>Your cart is empty</Message>

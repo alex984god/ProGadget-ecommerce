@@ -23,7 +23,6 @@ const protect = asyncHandler(async (req, res, next) => {
     }
 });
 
-
 // Admin middelware 
 const  admin = (req, res, next) => {
    if(req.user && req.user.isAdmin){
@@ -33,6 +32,5 @@ const  admin = (req, res, next) => {
     throw new Error('Not authorized as admin');
    }
 }
-
 
 export { protect, admin }
