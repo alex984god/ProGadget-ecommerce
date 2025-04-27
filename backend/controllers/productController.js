@@ -31,7 +31,6 @@ const getProductById = asyncHandler(async (req, res) => {
     throw new Error('Resource not found');
 });
 
-
 const createProduct = asyncHandler(async (req, res) => {
     const product = new Product({
         name:'Sample name',
@@ -125,9 +124,8 @@ const getTopProducts = asyncHandler(async (req, res) => {
     res.status(200).json(products)
 });
 
-
-
 export { getProducts, getProductById, 
          createProduct, updateProduct, 
          deleteProduct, createProductReview,
-         getTopProducts };
+         getTopProducts 
+        };
